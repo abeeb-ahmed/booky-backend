@@ -36,7 +36,6 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/hotels", hotelsRoute);
 app.use("/api/rooms", roomsRoute);
-app.use(express.static(path.join(__dirname, "/client/build")));
 
 // error handling
 app.use((err, req, res, next) => {
